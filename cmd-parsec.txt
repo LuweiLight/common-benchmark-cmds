@@ -1,0 +1,22 @@
+parsecmgmt -a run -p streamcluster -i simsmall
+parsecmgmt -a run -p streamcluster -i simmedium
+parsecmgmt -a run -p streamcluster -i simlarge
+parsecmgmt -a run -p streamcluster -i native
+
+source env.sh
+
+parsecmgmt -a run -p blackscholes -i native -n 4
+parsecmgmt -a run -p bodytrack -i native -n 4
+parsecmgmt -a run -p canneal -i native -n 4
+parsecmgmt -a run -p dedup -i native -n 4
+parsecmgmt -a run -p facesim -i native -n 4
+parsecmgmt -a run -p ferret -i native -n 4
+parsecmgmt -a run -p fluidanimate -i native -n 4
+parsecmgmt -a run -p freqmine -i native -n 4
+parsecmgmt -a run -p raytrace -i native -n 4
+parsecmgmt -a run -p streamcluster -i native -n 4
+parsecmgmt -a run -p swaptions -i native -n 4
+parsecmgmt -a run -p vips -i native -n 4
+parsecmgmt -a run -p x264 -i native -n 4
+
+
