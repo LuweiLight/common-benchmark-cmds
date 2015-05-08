@@ -1,0 +1,4 @@
+fio -filename=/fio-test -direct=1 -iodepth 1 -thread -rw=read -ioengine=psync -bs=64k -size=4G -numjobs=8 -group_reporting -name=mytest
+fio -filename=/fio-test -direct=1 -iodepth 1 -thread -rw=write -ioengine=psync -bs=64k -size=4G -numjobs=8 -group_reporting -name=mytest
+
+
