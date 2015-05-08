@@ -14,5 +14,5 @@ The website also provides a combined package:
 parsec-3.0.tar.gz (2.7GB)
 -----------------
 DO NOT use it.
-This tar contains many BUGs!
+This tar contains many BUGs! (e.g., compile errors)
 
