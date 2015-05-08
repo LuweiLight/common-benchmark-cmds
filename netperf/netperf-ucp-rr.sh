@@ -1,0 +1,12 @@
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 32,1024
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 64,1024
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 128,1024
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 32,2048
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 64,2048
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 128,2048
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 32,4096
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 64,4096
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 128,4096
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 32,8192
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 64,8192
+netperf -H 10.0.2.201 -t TCP_RR -l 30 -- -r 128,8192

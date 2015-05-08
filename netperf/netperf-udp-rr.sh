@@ -1,0 +1,12 @@
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 64,1024
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 256,1024
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 512,1024
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 64,2048
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 256,2048
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 512,2048
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 64,4096
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 256,4096
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 512,4096
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 64,8192
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 256,8192
+netperf -H 10.0.2.201 -t UDP_RR -l 30 -- -r 512,8192
