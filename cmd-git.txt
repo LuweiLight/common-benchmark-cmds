@@ -1,109 +1,108 @@
- 1035  git
- 1041  mkdir git-test
- 1042  cd git-test/
- 1044  git init
- 1048  cd .git/
- 1055  git status
- 1056  git add README.txt 
- 1057  git status
- 1058  git commit
- 1059  git commit -m "First commit"
- 1061   git config --global user.name "Luwei Cheng"
- 1062   git config --global user.email "chengluwei@gmail.com"
- 1063  git reset HEAD~1
- 1064  git reset HEAD
- 1065  git log
- 1066  git commit --amend
- 1067  git log
- 1068  git commit --amend
- 1069  git log
- 1070  git commit --amend
- 1071  git commit amend --author="Luwei Cheng <chengluwei@gmail.com>"
- 1072  git commit --amend --author="Luwei Cheng <chengluwei@gmail.com>"
- 1073  git log
- 1074  git remote add origin git@github.com:LuweiLight/Xen-4.5.0.git
- 1075  git remote
- 1076  git remote -v
- 1077  git push -u origin master
- 1080  git status
- 1081  git add README.txt 
- 1082  git status
- 1083  git diff --cached
- 1084  git reset HEAD
- 1085  git diff --cached
- 1086  git diff
- 1087  git add -u
- 1088  git status
- 1089  git commit -m "Update README"
- 1090  git status
- 1091  git push
- 1092  git log
- 1093  git reset HEAD~1
- 1094  git log
- 1095  git push -f
- 1100  mkdir git-xen-4.5.0-change
+mkdir git-test
+cd git-test/
+git init ./
+cd .git/
+git add README.txt 
+git status
+git config --global user.name "Luwei Cheng"
+git config --global user.email "chengluwei@gmail.com"
+git status
+git commit -m "First commit"
+
+git reset HEAD~1
+git reset HEAD
+git log
+git commit --amend
+git log
+git commit --amend
+git log
+git commit --amend
+git commit amend --author="Luwei Cheng <chengluwei@gmail.com>"
+git commit --amend --author="Luwei Cheng <chengluwei@gmail.com>"
+git log
+git remote add origin git@github.com:LuweiLight/Xen-4.5.0.git
+git remote
+git remote -v
+git push -u origin master
+git status
+git add README.txt 
+git status
+git diff --cached
+git reset HEAD
+git diff --cached
+git diff
+git add -u
+git status
+git commit -m "Update README"
+git status
+git push
+git log
+git reset HEAD~1
+git log
+git push -f
+mkdir git-xen-4.5.0-change
 
 
 If the local git histroy is corrupted
 ---------------------
- 1334  git init .
- 1335  git remote add origin git@github.com:LuweiLight/xen-4.5.0-balloon.git
- 1336  git fetch remote
- 1337  git remote -v
- 1338  git fetch origin
- 1339  git status
- 1340  git checkout origin/master
- 1341  git status
- 1342  git log
- 1343  git merge origin/master
- 1345  git log
- 1346  git status
- 1348  rm -Rf .git-backup/
- 1349  git status
- 1350  mv .git .git-backup
- 1351  git status
+git init .
+git remote add origin git@github.com:LuweiLight/xen-4.5.0-balloon.git
+git fetch remote
+git remote -v
+git fetch origin
+git status
+git checkout origin/master
+git status
+git log
+git merge origin/master
+git log
+git status
+rm -Rf .git-backup/
+git status
+mv .git .git-backup
+git status
 
- 1352  git init .
- 1353  git status
- 1355  git remote add origin git@github.com:LuweiLight/xen-4.5.0-balloon.git
- 1356  git remote -v
- 1357  git fetch origin
- 1358  git log
- 1359  git merge origin/master
- 1360  git log
- 1361  git status
- 1362  git diff
- 1363  rm -Rf .git-backup/
- 1364  git status
- 1365  git log
+git init .
+git status
+git remote add origin git@github.com:LuweiLight/xen-4.5.0-balloon.git
+git remote -v
+git fetch origin
+git log
+git merge origin/master
+git log
+git status
+git diff
+rm -Rf .git-backup/
+git status
+git log
 --------------------------
 
 would like to change commit message?
 --------------------------
- 1366  git commit --amend
- 1367  git log
- 1368  git push
- 1369  git push -f
+git commit --amend
+git log
+git push
+git push -f
 -------------------------
 
 add a new branch?
 -------------------------
- 1370  git checkout -b testing
- 1371  git branch
- 1372  git log
- 1373  git rebase -i  0694c7bfce
- 1374  git commit --amend
- 1375  git log
- 1376  git status
- 1377  git rebase --continue
- 1378  git log
- 1379  git branch
- 1380  git checkout master
- 1381  git lgo
- 1382  git log
- 1383  git branch -d testing
- 1384  git branch -D testing
- 1385  git log
- 1386  git branch
- 1387  git push
+git checkout -b testing
+git branch
+git log
+git rebase -i  0694c7bfce
+git commit --amend
+git log
+git status
+git rebase --continue
+git log
+git branch
+git checkout master
+git lgo
+git log
+git branch -d testing
+git branch -D testing
+git log
+git branch
+git push
 --------------------------
