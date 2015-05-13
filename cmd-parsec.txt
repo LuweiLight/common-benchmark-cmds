@@ -20,6 +20,13 @@ parsecmgmt -a run -p vips -i native -n 4
 parsecmgmt -a run -p x264 -i native -n 4
 
 
+Would like to change and rebuild an application (say bodytrack)?
+(1) parsecmgmt -a clean -p bodytrack
+(2) parsecmgmt -a uninstall -p bodytrack
+(3) modify bodytrack
+(4) parsecmgmt -a build -p bodytrack
+
+
 Parsec's website: 
 http://parsec.cs.princeton.edu/parsec3-doc.htm
 
