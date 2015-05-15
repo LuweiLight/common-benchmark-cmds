@@ -1,0 +1,8 @@
+# It is all about "C-state" and "P-state"
+xenpm get-cpuidle-states    [cpuid]
+xenpm get-cpufreq-states    [cpuid]
+
+# To avoid wakeup latency, set CPU to "C0 + P0"
+xenpm set-max-cstate 0
+xenpm set-scaling-governor performance
+
